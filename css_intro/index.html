@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         h1,h2{color:maroon
         }
@@ -31,9 +32,25 @@ text-align: right;
     margin:10px auto;
     width: 70%;
 }
+.container{
+    margin: 20px 50px;
+    border: 1px solid black;
+    padding:100px;
+    background-color: whitesmoke;
+}
+body{
+    background-color: brown;
+}
     </style>
 </head>
 <body>
+    
+<div class="container">
+    <ul  class="nav">
+        <li><a class=active-navpage href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
     <h1>Today we will learn about adding style with css</h1>
     <h2>This is how we add style with inline css</h2>
     <p>This paragraph has no style</p>
@@ -50,5 +67,18 @@ text-align: right;
     <p class="big-text">i want this one really big</p>
     <p class="big-text right-align">i want this one really big and right align</p>
     <img src="" alt="" class="centered">
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>School</th>
+    </tr>
+    <tr>
+        <td>Syon</td>
+    <td>12th</td>
+    <td>Eastside Prep</td>
+    </tr>
+</table>
+</div>
 </body>
 </html>
