@@ -1,0 +1,38 @@
+.container{
+    margin: 20px 50px;
+    border: 1px solid black;
+    padding:100px;
+    background-color: whitesmoke;
+}
+body{
+    background-color: rgb(176, 142, 236);
+}
+.nav{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(186,216,79);
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+.nav li a:hover{
+    background-color: rgb(103, 79, 209);
+}
+.active-navpage{
+    background-color:rgb(103, 79, 209) ;
+}
+.centered{
+
+    display:block;
+    margin:10px auto;
+    width: 30%;
+}
