@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: grey;
+    background-color: rgb(204, 153, 255);
 }
 
 .nav li {
@@ -23,5 +23,5 @@
 }
 
 .active-navpage {
-    background-color: grey;
+    background-color: (204, 153, 255);
 }
