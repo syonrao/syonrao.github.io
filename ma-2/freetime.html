@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 35% 35% 30%;
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: whitesmoke;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .navmenu {
+            grid-column: 1/ span 3;
+            grid-row: 1;
+        }
+
+        .main-image {
+            grid-column: 1/ span 3;
+            grid-row: 2;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item navmenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="college.html">College Stress</a></li>
+                <li><a href="hw.html">Homework Stress</a></li>
+                <li><a href="counselors.html">Counseling Information</a></li>
+                <li><a class=active-navpage href="freetime.html">Using Freetime</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Bijan Gulamani </p>
+        </div>
+</body>
+
+</html>
