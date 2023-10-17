@@ -67,3 +67,24 @@ body {
     grid-row: 4;
 
 }
+
+h1{
+    font-family: "latienne-pro", serif;
+font-weight: 700;
+font-style: italic;
+font-size: 60px;
+ }       
+
+h2{
+    font-family: "latienne-pro", serif;
+font-weight: 700;
+font-style: italic;
+}
+
+ p{
+    font-size: 20px;
+    text-align: left;
+    font-family: "latienne-pro", serif;
+font-weight: 400;
+font-style: italic;
+ }
