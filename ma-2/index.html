@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-<style>
-    .grid-container {
-    display: grid;
-    grid-template-columns: 35% 35% 30%;
-    grid-gap: 10px;
-}
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 35% 35% 30%;
+            grid-gap: 10px;
+        }
 
-.grid-item {
-    background-color: whitesmoke;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-}
+        .grid-item {
+            background-color: whitesmoke;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
 
-.navmenu {
-    grid-column: 1/ span 3;
-    grid-row: 1;
-}
+        .navmenu {
+            grid-column: 1/ span 3;
+            grid-row: 1;
+        }
 
-.main-image {
-    grid-column: 2;
-    grid-row: 2;
-}
+        .main-image {
+            grid-column: 2;
+            grid-row: 2;
+        }
 
-.image2{
-    grid-column: 2;
-    grid-row: 2;
-}
+        .image2 {
+            grid-column: 2;
+            grid-row: 2;
+        }
 
-.image3{
-    grid-column: 3;
-    grid-row: 3;
-}
+        .image3 {
+            grid-column: 3;
+            grid-row: 3;
+        }
 
-.main1 {
-    grid-column: 1 / span 3;
-    grid-row: 3;
+        .main1 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
 
-}
-.center{
-    text-align: center;
-}
-</style>
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
 </head>
+
 <body>
+    <h1 class="center">Student Mental Health</h1>
     <div class="grid-container">
         <div class="grid-item navmenu">
             <ul class="nav">
@@ -64,9 +76,39 @@
     <img src="images/img3.webp" alt="img3" width="80%">
     <div class="grid-item main1">Student Mental Health</div>
     </div>
+    <table>
+        <tr>
+            <th>Mental-Health Symptom</th>
+            <th>Male %</th>
+            <th>Female %</th>
+        </tr>
+        <tr>
+            <td>Anxiety</td>
+            <td>7.8</td>
+            <td>17.4</td>
+        </tr>
+        <tr>
+            <td>Bipolar Disorder</td>
+            <td>1.3</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>Depression</td>
+            <td>7.5</td>
+            <td>14.2</td>
+        </tr>
+        <tr>
+            <td>Panic Attacks</td>
+            <td>3.2</td>
+            <td>8.7</td>
+        </tr>
+
+    </table>
+    <p><a href="https://www.semanticscholar.org/paper/Effects-of-Mental-Health-on-Student-Learning.-VanderLind/c66a08e0f11d3b16cdd020359f07f57816f73baa">Source for table</a></p>
     <footer>
         <p class="center">Created by Syon Rao</p>
-        
-      </footer>
+
+    </footer>
 </body>
+
 </html>

@@ -16,12 +16,73 @@
             color: white;
             text-align: center;
         }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: large;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body {
+            background-color: white;
+        }
+
+
+
+        /* this is my grid syle for all pages */
+        .grid-container {
+            display: grid;
+            grid-template: 35% 35% 30%;
+            grid-gap: 10px;
+
+        }
+
+        .grid-item {
+            background-color: ;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        
+        .navmenu {
+            grid-column: 1 / span 3;
+            grid-row: 1
+        }
+
+        .main-image {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+        }
+
+        .main1 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+
+        }
+
+        .main2 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+
+        }
+
+        div {
+            border: 3px dotted blue;
+            /* This is a challenge element */
+        }
+
+        
     </style>
 
-    <div class="footer">
-        <p>Created by Maddox</p>
-    </div>
-    </style>
+
 </head>
 <div class="grid-container">
     <div class="grid-item navmenu">
@@ -35,8 +96,50 @@
     </div>
 
     <body>
-        <h1>If you are feeling swamped with homeowrk then you can use these startegies to help</h1>
-        <h2>startegies</h2>
+        <h1 style="color: blue">If you are feeling swamped with homeowrk then you can use these startegies to help
+        </h1>
+        <p>The first strategy to help with homework stress is to piece it out. Don't think about it as a whole break
+            each class up and jsut think about it one at a time</p>
+        <p>Once youve borken up each class then do the assignemnt for that class and once youve done that think of that
+            as a win and you need to keep racking them up until you get the utlitmate win of finsihing your homework</p>
+        <img src="/ma-2/images/Stressed-Student.jpg" hegiht="300" width="300">
+        <p>here is a table of the general consencus of how stressful the classes at EPS are. This chart can be usefull
+            in what order to do your homework in if you are having a ahrd time getting started</p>
+
+        <table class="center">
+            <tr>
+                <th>Rank</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Literature</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Elective</td>
+            </tr>
+
+        </table>
+        <div class="footer">
+            <p>Created by Maddox</p>
+        </div>
     </body>
 
 </html>
