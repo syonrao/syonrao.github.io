@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>College Stress</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .grid-container {
@@ -43,68 +43,125 @@
         .center {
             text-align: center;
         }
+
+        .centering {
+            text-align: center;
+        }
+
+        table.ex2 {
+            empty-cells: show;
+        }
+
+        @keyframes moveText {
+            0% {
+                left: 0;
+                font-size: 38px;
+            }
+
+            50% {
+                left: 50%;
+                font-size: 38px;
+            }
+
+            100% {
+                left: 100%;
+                font-size: 38px;
+            }
+        }
+
+        .moving-text {
+            position: absolute;
+            animation: moveText 20s linear infinite;
+
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="center">Managing College Stress</h1>
-    <div class="grid-container">
-        <div class="grid-item navmenu">
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a class=active-navpage href="college.html">College Stress</a></li>
-                <li><a href="hw.html">Homework Stress</a></li>
-                <li><a href="counselors.html">Counseling Information</a></li>
-                <li><a href="freetime.html">Using Freetime</a></li>
-            </ul>
-            <div class="grid-item:main-image"><img src="images/anxiety-stress.jpg" alt: mental-health hegiht="300"
-                    width="300"></div>
+    </style>
+    </head>
+
+    <body>
+        <div class="moving-text">College Stress</div>
+        <br>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item navmenu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class=active-navpage href="college.html">College Stress</a></li>
+                    <li><a href="hw.html">Homework Stress</a></li>
+                    <li><a href="counselors.html">Counseling Information</a></li>
+                    <li><a href="freetime.html">Using Freetime</a></li>
+                </ul>
+                <div class="grid-item:main-image"><img src="images/anxiety-stress.jpg" alt: mental-health hegiht="300"
+                        width="300"></div>
+            </div>
+            <h1 style="color: darkmagenta"> Navigating College could be a stressful time consuming
+                endeavor.
+            </h1>
+            <p style="color: rgb(163, 213, 246)">If you are struggling with stress or mental health, don't hesitate to
+                seek
+                professional
+                help. Many colleges
+                and universities offer counseling services for students. Talking to a counselor or therapist can provide
+                a
+                safe space to talk through your feelings and develop coping strategies.</p>
+            <p>Taking breaks during the college application process is crucial as it allows students to recharge, reduce
+                stress, and maintain their overall well-being. The college application journey can be intense, with
+                numerous
+                tasks, deadlines, and high expectations. Breaks, whether short walks, moments of relaxation, or engaging
+                in
+                enjoyable activities, provide a mental and emotional respite. These pauses allow students to return to
+                their
+                tasks with increased focus, creativity, and a refreshed perspective. By taking regular breaks, students
+                can
+                better manage the stress and pressures that often accompany the college application process, ensuring a
+                more
+                balanced and healthier experience overall.</p>
+            <img src="/ma-2/images/collegel.jpg" hegiht="300" width="300">
+            <p>In my opinion these are the most stressful factors in the College application process:</p>
+
+            <table class="ex2" border="1">
+                <tr>
+                    <th>Stress Level</th>
+                    <th>College Facto</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Writing Essays</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Waiting for Admission Decisions</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Picking Which College</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Peer Pressure</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Standarized Tests</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Senior Year After College </td>
+                </tr>
+
+            </table>
+
         </div>
-        <h1 style="color: cyan">If you are feeling swamped with homeowrk then you can use these startegies to help
-        </h1>
-        <p>The first strategy to help with homework stress is to piece it out. Don't think about it as a whole break
-            each class up and jsut think about it one at a time</p>
-        <p>Once youve borken up each class then do the assignemnt for that class and once youve done that think of that
-            as a win and you need to keep racking them up until you get the utlitmate win of finsihing your homework</p>
-        <img src="/ma-2/images/Stressed-Student.jpg" hegiht="300" width="300">
-        <p>here is a table of the general consencus of how stressful the classes at EPS are. This chart can be usefull
-            in what order to do your homework in if you are having a ahrd time getting started</p>
 
-        <table class="center">
-            <tr>
-                <th>Rank</th>
-                <th>Class</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Math</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Science</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Spanish</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Literature</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>History</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Elective</td>
-            </tr>
+        <footer style="text-align: center;">
 
-        </table>
+            <p class="centering">Created by Bijan Gulamani</p>
 
-        <div class="footer">
-            <p>Bijan Gulamani </p>
-        </div>
-</body>
+        </footer>
+    </body>
 
 </html>
