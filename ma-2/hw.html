@@ -4,17 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homeowrk Load</title>
+    <title>Homeowrk Stress</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 35% 35% 30%;
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: whitesmoke;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .navmenu {
+            grid-column: 1/ span 3;
+            grid-row: 1;
+        }
+
+        .main-image {
+            grid-column: 1/ span 3;
+            grid-row: 2;
+        }
+
         .footer {
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: blue;
+            background-color: red;
             color: white;
             text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .centering {
+            text-align: center;
+        }
+
+        table.ex2 {
+            empty-cells: show;
+        }
+
+        /* New CSS element */
+        @keyframes moveText {
+            0% {
+                left: 0;
+                font-size: 38px;
+            }
+
+            50% {
+                left: 50%;
+                font-size: 38px;
+            }
+
+            100% {
+                left: 100%;
+                font-size: 38px;
+            }
+        }
+
+        .moving-text {
+            position: absolute;
+            animation: moveText 20s linear infinite;
+
         }
 
         table,
@@ -24,57 +83,49 @@
             border-collapse: collapse;
             font-size: large;
         }
-
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        body {
-            background-color: white;
-        }
-
-
-        div {
-            border: 3px dotted blue;
-            /* This is a challenge element */
-        }
-
-        h1 {
-            font-family: "latienne-pro", serif;
-
-            font-weight: 700;
-
-            font-style: italic
-        }
     </style>
-
-
 </head>
-<div class="grid-container">
-    <div class="grid-item navmenu">
-        <ul class="nav">
-            <li><a class=active-navpage href="index.html">Home</a></li>
-            <li><a href="college.html">College Stress</a></li>
-            <li><a href="hw.html">Homework Stress</a></li>
-            <li><a href="counselors.html">Counseling Information</a></li>
-            <li><a href="freetime.html">Using Freetime</a></li>
-        </ul>
-    </div>
+
+<body>
+    </style>
+    </head>
 
     <body>
-        <h1 style="color: blue">If you are feeling swamped with homeowrk then you can use these startegies to help
-            <p>The first strategy to help with homework stress is to piece it out. Don't think about it as a whole break
+        <div class="moving-text">Homework stress</div>
+        <br>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item navmenu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class=active-navpage href="college.html">College Stress</a></li>
+                    <li><a href="hw.html">Homework Stress</a></li>
+                    <li><a href="counselors.html">Counseling Information</a></li>
+                    <li><a href="freetime.html">Using Freetime</a></li>
+                </ul>
+                <div class="grid-item:main-image"><img src="images/Stressed-Student.jpg" alt: Stressed="400"
+                        width="400"></div>
+            </div>
+            <h1 style="color: blue">If you are feeling swamped with homeowrk then you can use these startegies
+                to
+                help
+            </h1>
+            <p>The first strategy to help with homework stress is to piece it out. Don't think about it as a
+                whole break
                 each class up and jus think about it one at a time.</p>
-            <p>Once youve broken up each class then do the assignemnt for that class. Once youve done that think of that
-                as a win and you need to keep racking them up until you get the utlitmate win of finsihing your
-                homework.
-            </p>
-            <img src="/ma-2/images/Stressed-Student.jpg" height="300" width="300">
-            <p>here is a table of the general consencus of how stressful the classes at EPS are. This chart can be
-                usefull
-                in what order to do your homework in if you are having a hard time getting started.</p>
 
+            <p>Once youve broken up each class then do the assignemnt for that class. Once youve done that
+                think
+                of that
+                as a win and you need to keep racking them up until you get the utlitmate win of finsihing
+                your
+                homework.</p>
+            <p>here is a table of the general consencus of how stressful the classes at EPS are. This chart
+                can
+                be
+                useful
+                in what order to do your homework in if you are having a hard time getting started.</p>
             <table class="center">
                 <tr>
                     <th>Rank</th>
@@ -106,8 +157,11 @@
                 </tr>
 
             </table>
-            <footer>
-                <p class="center">Created by Maddox Carr</p>
+
+
+            <footer style="text-align: center;">
+
+                <p class="centering">Created by Maddox Carr</p>
 
             </footer>
     </body>
