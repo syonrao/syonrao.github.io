@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Lets learn JavaScript</h1>
+    <h2>How do we onclick events and alerts on an anchor</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('Warning! You are leaving this page!')">Eastside
+        Prep</a>
+
+    <h2>What is my secret identity?</h2>
+    <p id="secret"></p>
+    <button
+        onclick="document.getElementById('secret').innerHTML='Bijan Gulamani'; document.getElementById('secret').style.display='block'"">Reveal!</button>
+    <button onclick=" document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>How do we change an image with js</h2>
+    <img src=" img/pic_bulboff.gif" alt="bulb that is off" id="bulb">
+        <button onclick="document.getElementById('bulb').src='img/pic_bulbon.gif'">Turn On</button>
+        <button onclick="document.getElementById('bulb') .src='img/pic_bulboff.gif'">Turn Off</button>
+
+        <h2>How do we change css</h2>
+        <p id="alice">Hi, I am Alice</p>
+        <button
+            onclick="document.getElementById('alice').style.color='blue';document.getElementById('alice').style.fontSize='10px'">CAKE!
+            EAT ME!</button>
+
+        <H2>How do we return user input</H2>
+        <button onclick="askName()">Whats ya name</button>
+        <p id="askname"></p>
+        <script>
+            function askName() {
+                let nameParagraph = document.getElementById('askname');
+                let name = prompt('What is ya name');
+                //decide what to do
+                if (name === "Bijan") {
+                    nameParagraph.innerHTML = "welcome to my site"
+                } else {
+                    nameParagraph.innerHTML = "Hey " + name;
+                }
+
+            }
+        </script>
+
+</body>
+
+</html>
