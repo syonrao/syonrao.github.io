@@ -30,13 +30,13 @@ function trivia2() {
     let porkchosen = document.getElementById("pork").checked;
     let beefSelected = document.getElementById("beef").checked;
     let turkeychosen= document.getElementById("turkey").checked;
-    if (porkSelectedSelected) {
-        triviaAnswer.innerHTML = fname + "you are wrong. stupid";
+    if (porkchosen) {
+        triviaAnswer.innerHTML = "you are wrong. stupid";
     }
     else if (beefSelected) {
-        triviaAnswer.innerHTML = fname + "you are wrong. stupid";
+        triviaAnswer.innerHTML = "you are wrong. stupid";
     }
     else {
-        triviaAnswer.innerHTML = fname + ",you are correct";
+        triviaAnswer.innerHTML = "you are correct";
     }
 }
