@@ -25,3 +25,18 @@ function trivia() {
 }
 
 
+function trivia2() {
+    let triviaAnswer = document.getElementById("trivia-answers");
+    let porkchosen = document.getElementById("pork").checked;
+    let beefSelected = document.getElementById("beef").checked;
+    let turkeychosen= document.getElementById("turkey").checked;
+    if (porkSelectedSelected) {
+        triviaAnswer.innerHTML = fname + "you are wrong. stupid";
+    }
+    else if (beefSelected) {
+        triviaAnswer.innerHTML = fname + "you are wrong. stupid";
+    }
+    else {
+        triviaAnswer.innerHTML = fname + ",you are correct";
+    }
+}
