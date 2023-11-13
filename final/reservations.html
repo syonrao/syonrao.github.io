@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/wot0wpo.css">
-<style>
-    .centered {
 
-display: block;
-margin: 10px auto;
-width: 70%;
-}
-    .image{
-        grid-column: 1 /span 3;
-        grid-row: 1;
-    }
+    <style>
+        .centered {
 
-    .bellevue2 {
-    grid-column: 1;
-    grid-row: 2;
-}
+            display: block;
+            margin: 10px auto;
+            width: 70%;
+        }
 
-.wallingford2 {
-    grid-column: 3;
-    grid-row: 2;
-}
+        .image {
+            grid-column: 1 /span 3;
+            grid-row: 1;
+        }
 
+        .bellevue2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
 
-</style>
+        .wallingford2 {
+            grid-column: 3;
+            grid-row: 2;
+        }
+    </style>
 </head>
+
 <body>
     <img src="img/cantinett.jpg" alt="logo" style="width: 40%;" class="centered">
     <div class="navmenu">
@@ -50,51 +52,38 @@ width: 70%;
     <div class="bellevue2">
         <h2 style="text-align: center;"> <u>Bellevue</u></h2>
         <p style="text-align: center;">425-233-6040</p>
-        <p style="text-align: center;"> <a href="https://www.google.com/maps/dir//Cantinetta+Bellevue,+10038+Main+St,+Bellevue,+WA+98004/@47.6102716,-122.4933529,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54906c80a63811f3:0xb482253a561e902b!2m2!1d-122.2049414!2d47.6102762!3e0?entry=ttu" target="_blank">10038 Main St.
-            Bellevue, WA 98004</a></p>
-            <button onclick="askName()">Make a Reservation</button>
-            <p id="askname"></p>
-            <script>
-                function askName() {
-                    let nameParagraph = document.getElementById('askname');
-                    let name = prompt('What time would you like your reservation to be?');
-                    //decide what to do
-                    if (name === "no reservation") {
-                        nameParagraph.innerHTML = "why did you click this button?"
-                    } else {
-                        nameParagraph.innerHTML = "Reservation made for " + name;
-                    }
-    
-                }
-            </script>
-    
+        <p style="text-align: center;"> <a
+                href="https://www.google.com/maps/dir//Cantinetta+Bellevue,+10038+Main+St,+Bellevue,+WA+98004/@47.6102716,-122.4933529,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54906c80a63811f3:0xb482253a561e902b!2m2!1d-122.2049414!2d47.6102762!3e0?entry=ttu"
+                target="_blank">10038 Main St.
+                Bellevue, WA 98004</a></p>
+
+
     </div>
-   <div class="wallingford2">
-    <h2 style="text-align: center;"> <u>Wallingford</u></h2>
-    <p style="text-align: center;">206-632-1000</p>
-    <p style="text-align: center;"> <a href="https://www.google.com/maps/dir//Cantinetta,+3650+Wallingford+Ave+N,+Seattle,+WA+98103/@47.651874,-122.4001839,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x549014fe8f1c96af:0xa3a2ce230f7dd57d!2m2!1d-122.3360995!2d47.6518749!3e0?entry=ttu" target="_blank">3650 Wallingford Ave. 
-        Seattle, WA 98103</a></p>
-        <button onclick="askName()">Make a Reservation</button>
-            <p id="askname"></p>
-            <script>
-                function askName() {
-                    let nameParagraph = document.getElementById('askname');
-                    let name = prompt('What time would you like your reservation to be?');
-                    //decide what to do
-                    if (name === "no reservation") {
-                        nameParagraph.innerHTML = "why did you click this button?"
-                    } else {
-                        nameParagraph.innerHTML = "Reservation made for " + name;
-                    }
-    
-                }
-            </script>
-   </div>
-   <div>
-    <h2 style="text-align: center;"><u>Tuesday-Sunday 5pm - close | Closed Monday</u></h2> </div>
-    
+    <div class="wallingford2">
+        <h2 style="text-align: center;"> <u>Wallingford</u></h2>
+        <p style="text-align: center;">206-632-1000</p>
+        <p style="text-align: center;"> <a
+                href="https://www.google.com/maps/dir//Cantinetta,+3650+Wallingford+Ave+N,+Seattle,+WA+98103/@47.651874,-122.4001839,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x549014fe8f1c96af:0xa3a2ce230f7dd57d!2m2!1d-122.3360995!2d47.6518749!3e0?entry=ttu"
+                target="_blank">3650 Wallingford Ave.
+                Seattle, WA 98103</a></p>
+        <form action="" id="name-form">
+            <label for="fname">Time</label>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Day</label>
+            <input type="text" name="lname" id="lname"><br>
+        </form>
+        <br>
+        <input type="button" value="SUBMIT" onclick="greet()">
+        <p id="greet" style="font-size: x-large">Reservation</p>
+    </div>
+    <div>
+        <h2 style="text-align: center;"><u>Tuesday-Sunday 5pm - close | Closed Monday</u></h2>
+    </div>
+
     <footer class="footer">
         <p style="color: white; text-align: center;">Bellevue: (425) 233-6040 | Wallingford: (206) 632-1000</p>
-     </footer> 
+    </footer>
 </body>
+<script src="js/stuff.js"></script>
+
 </html>
